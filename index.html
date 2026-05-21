@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dmytro Ziailyk (55644) - PTW LAB F</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<form method="POST" class="forma" >
+    <label for="inputData"> </label>
+    <textarea id="inputData" name="inputData"> </textarea>
+
+    <label for="inputFileType" > Format wejściowy: </label>
+    <select id="inputFileType" name="inputFormat">
+        <option value="csv"> CSV</option>
+        <option value="ssv"> SSV</option>
+        <option value="tsv"> TSV</option>
+        <option value="json"> JSON</option>
+        <option value="yaml"> YAML</option>
+    </select>
+
+    <label for="outputFormat">Format wyjściowy:</label>
+    <select id="outputFormat" name="outputFormat">
+        <option value="csv">CSV</option>
+        <option value="ssv">SSV</option>
+        <option value="tsv">TSV</option>
+        <option value="json">JSON</option>
+        <option value="yaml">YAML</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Konwertuj</button>
+
+</form>
+
+<h2>Wynik: </h2>
+<pre id="outputData">
+
+</pre>
+
+</body>
+</html>
